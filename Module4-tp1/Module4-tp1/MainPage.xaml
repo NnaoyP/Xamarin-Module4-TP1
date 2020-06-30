@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Module4_tp1.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="#58B0F0" Padding="25 10">
+            <Label HorizontalOptions="StartAndExpand" TextColor="White">Nouveau</Label>
+            <Label HorizontalOptions="CenterAndExpand" TextColor="White">Accueil</Label>
+            <Label HorizontalOptions="EndAndExpand" TextColor="White">Rechercher</Label>
+        </StackLayout>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <ContentView>
+                <Grid Padding="10 10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"></BoxView>
+                    <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
+                        <Label HorizontalOptions="Start" VerticalOptions="Center">Yoann</Label>
+                        <Label HorizontalOptions="StartAndExpand" VerticalOptions="Center">@Yoannn_ENI</Label>
+                        <Label HorizontalOptions="EndAndExpand" TextColor="LightGray" VerticalOptions="Center">50s</Label>
+                    </StackLayout>
+                    <Label Grid.Column="1" Grid.Row="1">
+                        Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Fhtagnnyth f's'uhn, ngbug Dagon vulgtm R'lyehog f'n'ghft h'hlirgh, n'ghftor nglui k'yarnak lw'nafhoth athg ooboshu.
+                    </Label>
+                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                        <Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center">Répondre</Label>
+                        <Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center">Retweets</Label>
+                        <Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center">Favoris</Label>
+                    </StackLayout>
+                </Grid>
+            </ContentView>
+        </ScrollView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" HeightRequest="75">
+            <Label HorizontalOptions="CenterAndExpand" TextColor="#58B0F0" VerticalOptions="Center">Fil</Label>
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center">Notifications</Label>
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center">Messages</Label>
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center">Moi</Label>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
